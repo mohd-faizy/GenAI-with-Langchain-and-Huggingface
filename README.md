@@ -43,6 +43,7 @@
   - [Contributing](#contributing)
   - [⚖ ➤ License](#--license)
   - [❤️ Support](#️-support)
+  - [🪙Credits and Inspiration](#credits-and-inspiration)
   - [🔗Connect with me](#connect-with-me)
 
 ## Overview
@@ -225,6 +226,16 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ## ❤️ Support
 
 If you find this repository helpful, show your support by starring it! For questions or feedback, reach out on [Twitter(`X`)](https://twitter.com/F4izy).
+
+## 🪙Credits and Inspiration
+
+This repository is inspired by the excellent course content created by [Nitish Rajput](https://www.youtube.com/@campusx-official) on the CampusX YouTube channel. The implementation and examples in this repository are based on his comprehensive tutorials on Generative AI with Langchain and Huggingface.
+
+📺 **Original Course:**
+
+- **Channel**: [CampusX](https://www.youtube.com/@campusx-official)
+- **Instructor**: *Nitish Rajput*
+- **Course Link**: [Generative AI Course](https://www.youtube.com/watch?v=pSVk-5WemQ0&list=PLKnIA16_RmvaTbihpo4MtzVm4XOQa0ER0)
 
 ## 🔗Connect with me
 
