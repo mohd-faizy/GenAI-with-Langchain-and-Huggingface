@@ -14,9 +14,8 @@
 
 - 🧠 The **Models component** is the **core interface** to interact with AI models (LLMs & Embedding Models).
 - 🔄 LangChain is **model-agnostic** – you can switch between different LLM providers with minimal code changes.
-- 🛠️ Solves the **standardization problem** – every provider (OpenAI, Google, Anthropic, etc.) has different APIs, but LangChain offers one unified interface.
+- 🛠️ Solves the **standardization problem** – every provider (`OpenAI`, `Gemini`, `Anthropic`, etc.) has different APIs, but LangChain offers one unified interface.
 
----
 
 ### 📚 **Why Are Models Important?**
 
@@ -24,7 +23,6 @@
 - 🤖 Handles both **language generation** (chatbots, agents) and **vector embedding** (search, retrieval).
 - 🏗️ Acts as a **foundation** for the other 5 components: Prompts, Chains, Memory, Indexes, Agents.
 
----
 
 ### 🔍 **Challenges Solved by LangChain Models**
 
@@ -32,7 +30,6 @@
 2. 🔌 **Different APIs for Different Providers** → LangChain unifies them.
 3. 🔁 **No Standardized Output/Input Handling** → LangChain parses and handles it uniformly.
 
----
 
 ### 🤹‍♂️ **Types of Models in LangChain**
 
@@ -40,14 +37,14 @@
     - Input: Text
     - Output: Text
     - Use cases: Chatbots, summarization, translation, coding.
-    - Providers: OpenAI, Claude, Hugging Face, Bedrock, Mistral, Vertex AI, Azure OpenAI.
+    - Providers: `OpenAI`, `Claude`, `Hugging Face`, `Bedrock`, `Mistral`, `Vertex AI`, `Azure`.
+  
 2. 🧭 **Embedding Models**
     - Input: Text
     - Output: Vector (numerical representation)
-    - Use case: Semantic Search / Vector DB
-    - Providers: OpenAI, Mistral AI, IBM, Llama, etc.
+    - Use case: `Semantic Search` / `Vector DB`
+    - Providers: `OpenAI`, `Mistral` AI, `IBM`, `Llama`, etc.
 
----
 
 ### 🧪 **Features Supported Across Models**
 
@@ -56,7 +53,6 @@
 - 🧑‍💻 Local execution
 - 📸 Multimodal input (e.g., images + text)
 
----
 
 ## 💡 **Code Examples for LangChain Models**
 
@@ -67,11 +63,11 @@ from langchain_openai import ChatOpenAI
 
 llm = ChatOpenAI(model="gpt-4", temperature=0.7)
 response = llm.invoke("What is the capital of France?")
+
 print(response.content)
 
 ```
 
----
 
 ### 2️⃣ Load a Chat Model (Anthropic Claude)
 
@@ -80,11 +76,11 @@ from langchain_anthropic import ChatAnthropic
 
 llm = ChatAnthropic(model="claude-3-opus-20240229")
 response = llm.invoke("Explain quantum entanglement in simple terms.")
+
 print(response.content)
 
 ```
 
----
 
 ### 3️⃣ Load an Embedding Model (OpenAI)
 
@@ -93,11 +89,11 @@ from langchain_openai import OpenAIEmbeddings
 
 embedder = OpenAIEmbeddings()
 vector = embedder.embed_query("What is machine learning?")
+
 print(vector[:5])  # Print first 5 values of the vector
 
 ```
 
----
 
 ### 4️⃣ Switch Between Providers with 1 Line
 
@@ -107,11 +103,11 @@ from langchain_mistralai import ChatMistralAI
 
 llm = ChatMistralAI(model="mistral-small")
 response = llm.invoke("Summarize the plot of Inception.")
+
 print(response.content)
 
 ```
 
----
 
 ### 5️⃣ Use Local Language Model (e.g., Llama.cpp or Ollama)
 
@@ -120,11 +116,11 @@ from langchain_community.chat_models import ChatOllama
 
 llm = ChatOllama(model="llama2")
 response = llm.invoke("What are black holes?")
+
 print(response.content)
 
 ```
 
----
 
 ### 6️⃣ Advanced: JSON Output from a Chat Model
 
@@ -137,7 +133,6 @@ print(response.content)  # Should be a structured response like: {"France": "Par
 
 ```
 
----
 
 ### ✅ **Summary**
 
@@ -171,7 +166,6 @@ print(response.content)  # Should be a structured response like: {"France": "Par
 - 🧑‍🔬 The rise of **Prompt Engineering** as a field (and job!) proves how central prompts are.
 - 🧩 LangChain provides a **Prompts component** to manage, customize, and structure prompts efficiently.
 
----
 
 ### 🧰 **What the Prompts Component Offers**
 
@@ -180,7 +174,6 @@ print(response.content)  # Should be a structured response like: {"France": "Par
 - 🧪 **Few-shot prompts** – train the model by showing it examples of the behavior you expect.
 - 📦 Reusability – create prompt **templates** you can use again and again in different contexts.
 
----
 
 ## 🧠 **Types of Prompts in LangChain**
 
@@ -199,7 +192,6 @@ print(response.content)  # Should be a structured response like: {"France": "Par
 - 🎓 Give **input-output examples** to teach the model before the real query.
 - 📊 Example: Show how messages map to categories before asking it to classify a new one.
 
----
 
 ## 🧪 **Code Examples for LangChain Prompts**
 
@@ -214,7 +206,6 @@ print(formatted)
 
 ```
 
----
 
 ### 2️⃣ Dynamic Multi-Variable Prompt
 
@@ -224,7 +215,6 @@ print(prompt.format(topic="Climate Change", tone="fun"))
 
 ```
 
----
 
 ### 3️⃣ Role-Based Prompt with System Message
 
@@ -241,7 +231,6 @@ print([msg.content for msg in formatted])
 
 ```
 
----
 
 ### 4️⃣ Few-Shot Prompt Template
 
@@ -266,7 +255,6 @@ print(few_shot_prompt.format(query="How do I change my credit card info?"))
 
 ```
 
----
 
 ### 5️⃣ Combine Prompt with Chat Model
 
@@ -279,7 +267,6 @@ print(response.content)
 
 ```
 
----
 
 ### 6️⃣ Prompt with Custom Jinja Template (Advanced)
 
@@ -297,7 +284,6 @@ print(prompt.format(role="data scientist", question="What is overfitting?"))
 
 ```
 
----
 
 ### ✅ **Summary**
 
@@ -309,7 +295,6 @@ print(prompt.format(role="data scientist", question="What is overfitting?"))
 ---
 ![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
 
----
 
 # 🔹 **3. Chains – Build Smart Pipelines for LLM Workflows**
 
@@ -319,7 +304,6 @@ print(prompt.format(role="data scientist", question="What is overfitting?"))
 - 🤖 LangChain is **named after Chains** – that’s how fundamental they are!
 - ⚙️ They let you build **sequential**, **parallel**, or **conditional** flows between components like LLMs, tools, and memory.
 
----
 
 ### ⚡ **Why Use Chains?**
 
@@ -327,7 +311,6 @@ print(prompt.format(role="data scientist", question="What is overfitting?"))
 - 🧼 Avoids repetitive manual code to handle data transfer between steps.
 - 🚀 Lets you design **multi-step AI applications** that work as one smooth pipeline.
 
----
 
 ### 🛠️ **Real-World Use Case (Sequential Chain Example)**
 
@@ -338,7 +321,6 @@ print(prompt.format(role="data scientist", question="What is overfitting?"))
 
     ✅ Chains handle this flow without manual intervention — just input English text and get the final Hindi summary.
 
----
 
 ### 🔍 **Types of Chains in LangChain**
 
@@ -357,11 +339,9 @@ print(prompt.format(role="data scientist", question="What is overfitting?"))
 - 🤔 Branching logic: behavior changes based on input/response.
 - Example: If user feedback is negative → Send alert to support; else → Send thank-you note.
 
----
 
 ## 💻 **Code Examples for LangChain Chains**
 
----
 
 ### 1️⃣ Basic LLMChain (1-step flow)
 
@@ -379,7 +359,6 @@ print(result)
 
 ```
 
----
 
 ### 2️⃣ SequentialChain: Translation ➡️ Summarization
 
@@ -403,7 +382,6 @@ print(result)
 
 ```
 
----
 
 ### 3️⃣ Simple Conditional Chain (If-Else Logic)
 
@@ -421,7 +399,6 @@ print(result)
 
 ```
 
----
 
 ### 4️⃣ Parallel Chain (Mock Conceptual Example)
 
@@ -443,7 +420,6 @@ print("Joke:\n", joke)
 
 ```
 
----
 
 ### 5️⃣ Chain with Memory Integration (Preview)
 
@@ -459,7 +435,6 @@ print(chain.run("What did I just say?"))
 
 ```
 
----
 
 ### ✅ **Summary**
 
@@ -487,7 +462,7 @@ print(chain.run("What did I just say?"))
   - → The model doesn’t remember who *"he"* is.
 - 🧠 **Memory solves this problem** by maintaining **context across turns** in a conversation.
 
----
+
 
 ### 🚀 **Why Is Memory Important?**
 
@@ -495,7 +470,6 @@ print(chain.run("What did I just say?"))
 - 🧾 Keeps track of what users say — no need to repeat questions.
 - 🤖 Essential for building **stateful AI applications** like customer service bots, AI tutors, assistants, etc.
 
----
 
 ### 🔍 **Types of Memory in LangChain**
 
@@ -506,11 +480,10 @@ print(chain.run("What did I just say?"))
 | **ConversationSummaryMemory** | Stores a **summary of conversation** | Ideal for long chats, saves cost |
 | **Custom Memory** | Store **special facts or variables** | Good for personalized assistants |
 
----
+
 
 ## 💻 **Code Examples for LangChain Memory**
 
----
 
 ### 1️⃣ Basic Memory Integration with `LLMChain`
 
@@ -532,7 +505,6 @@ print(chain.run("What team does he play for?"))  # Remembers previous message
 
 ```
 
----
 
 ### 2️⃣ Using `ConversationBufferWindowMemory`
 
@@ -548,7 +520,6 @@ print(chain.run("What did I just say?"))  # Only remembers 2 last messages
 
 ```
 
----
 
 ### 3️⃣ Using `ConversationSummaryMemory` (with summarization)
 
@@ -563,7 +534,6 @@ print(chain.run("Who was the main character?"))  # Will have access to summary, 
 
 ```
 
----
 
 ### 4️⃣ Custom Memory Example (storing variables)
 
@@ -579,7 +549,6 @@ print(memory.load_memory_variables({}))  # Returns entire conversation history
 
 ```
 
----
 
 ### 5️⃣ Use Memory with a ChatPromptTemplate
 
@@ -600,7 +569,6 @@ print(conversation.run("Another one please!"))  # Keeps previous context
 
 ```
 
----
 
 ### ✅ **Summary**
 
@@ -615,7 +583,6 @@ print(conversation.run("Another one please!"))  # Keeps previous context
 ---
 ![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
 
----
 
 # 🗂️ **5. Indexes – Letting LLMs Use Your Private Data**
 
@@ -629,7 +596,6 @@ print(conversation.run("Another one please!"))  # Keeps previous context
   - **Search and retrieve only what’s needed** from this data.
   - Use it for **answering questions** based on it.
 
----
 
 ### 🧱 **The 4 Core Sub-Components of Indexes**
 
@@ -640,7 +606,6 @@ print(conversation.run("Another one please!"))  # Keeps previous context
 | 3️⃣ | **Vector Store** | Stores chunk embeddings for similarity search |
 | 4️⃣ | **Retriever** | Finds the best chunks for a user query |
 
----
 
 ### 📊 **How It Works (Simplified Flow)**
 
@@ -663,7 +628,6 @@ PDF file (RulesBook.pdf)
 
 ## 💻 **LangChain Indexes – Code Example**
 
----
 
 ### 🧾 1. Load Your PDF Document
 
@@ -675,7 +639,6 @@ docs = loader.load()
 
 ```
 
----
 
 ### ✂️ 2. Split Into Chunks
 
@@ -687,7 +650,6 @@ chunks = splitter.split_documents(docs)
 
 ```
 
----
 
 ### 🧠 3. Create Embeddings + Vector Store
 
@@ -700,7 +662,6 @@ vector_store = FAISS.from_documents(chunks, embeddings)
 
 ```
 
----
 
 ### 🔍 4. Setup Retriever and Ask Questions
 
@@ -715,7 +676,6 @@ for doc in relevant_docs:
 
 ```
 
----
 
 ### ✅ Optional: Use with RetrievalQA Chain
 
@@ -732,7 +692,6 @@ print(qa_chain.run("What is the resignation notice period?"))
 
 ```
 
----
 
 ## 🧠 **Why Indexes Are Crucial**
 
@@ -744,7 +703,6 @@ print(qa_chain.run("What is the resignation notice period?"))
   - Research assistants
   - FAQ bots on your data
 
----
 
 ## 🔁 Recap of the 4 Sub-Components
 
@@ -755,7 +713,6 @@ print(qa_chain.run("What is the resignation notice period?"))
 ---
 ![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
 
----
 
 # 🤖 **6. Agents – The Smartest, Action-Oriented Component**
 
@@ -768,7 +725,6 @@ print(qa_chain.run("What is the resignation notice period?"))
   - 🔧 Tool use (`"Let me use a calculator or weather API"`)
   - 🧩 Integration with other LangChain components
 
----
 
 ### 🎯 **How Are Agents Different from Chatbots?**
 
@@ -778,7 +734,6 @@ print(qa_chain.run("What is the resignation notice period?"))
 | Can’t use APIs or tools | **Can call tools, APIs, functions** |
 | Gives answers | **Finds answers + performs real tasks** |
 
----
 
 ### 🧠 **Two Key Superpowers of Agents**
 
@@ -793,7 +748,6 @@ print(qa_chain.run("What is the resignation notice period?"))
     - 💾 Local Indexes
     - and more...
 
----
 
 ### 🔁 **How an Agent Works (Behind-the-Scenes Flow)**
 
@@ -805,7 +759,6 @@ print(qa_chain.run("What is the resignation notice period?"))
 4. Agent uses 🔧 calculator tool: 25 × 3 = 75
 5. Agent returns: **“The result is 75”**
 
----
 
 ### 💡 **10 Awesome Real-World Agent Examples**
 
@@ -822,7 +775,6 @@ print(qa_chain.run("What is the resignation notice period?"))
 | 9️⃣ | "Search PDF for 'termination policy' and translate to Marathi" | PDF retriever + translator |
 | 🔟 | "Ask a question, retrieve from my docs, and save the result to Notion" | Vector index + Notion API |
 
----
 
 ### 🔧 **Minimal Code Example: Agent with Tools**
 
@@ -857,7 +809,6 @@ agent.run("What's the population of Japan divided by 3?")
 
 ```
 
----
 
 ```python
 from langchain.agents import initialize_agent, Tool
@@ -895,7 +846,6 @@ agent = initialize_agent(
 
 Agents are the **glue** that orchestrates all the above when needed.
 
----
 
 ### 📌 **Summary**
 
