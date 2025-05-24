@@ -1,12 +1,12 @@
 # LangChain Components
 
-- ![author](https://img.shields.io/badge/author-mohd--faizy-red)
+![author](https://img.shields.io/badge/author-mohd--faizy-red)
 
 # Langchain components
 
-![image.png](_img\_langCompIMG\Lang_comp.png)
+![image.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/Lang_comp.png)
 
-## 🔹 **1. Models – The Core of LangChain**
+# 🔹 **1. Models – The Core of LangChain**
 
 ---
 
@@ -147,8 +147,9 @@ print(response.content)  # Should be a structured response like: {"France": "Par
 
 
 ---
+![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
 
-## 🔹 **2. Prompts – Crafting the Right Questions for LLMs**
+# 🔹**2. Prompts – Crafting the Right Questions for LLMs**
 
 ### 📌 **What Are Prompts in LangChain?**
 
@@ -304,8 +305,9 @@ print(prompt.format(role="data scientist", question="What is overfitting?"))
 - ✨ Essential for building smart, adaptive, and role-aware AI apps.
 
 ---
+![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
 
-## 🔹 **3. Chains – Build Smart Pipelines for LLM Workflows**
+# 🔹 **3. Chains – Build Smart Pipelines for LLM Workflows**
 
 ### 📌 **What Are Chains in LangChain?**
 
@@ -466,8 +468,9 @@ print(chain.run("What did I just say?"))
 - 📦 Combine Chains with Prompts, Memory, and Agents for powerful apps.
 
 ---
+![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
 
-## 🧠 **4. Memory – Remembering Past Conversations in LangChain**
+# 🧠 **4. Memory – Remembering Past Conversations in LangChain**
 
 ### 📌 **What Is Memory in LangChain?**
 
@@ -604,8 +607,9 @@ print(conversation.run("Another one please!"))  # Keeps previous context
 - 🧩 Combine Memory with Chains, Prompts, and Models to build **real conversational agents**.
 
 ---
+![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
 
-## 🗂️ **5. Indexes – Letting LLMs Use Your Private Data**
+# 🗂️ **5. Indexes – Letting LLMs Use Your Private Data**
 
 ### 🤔 **Why Do We Need Indexes?**
 
@@ -647,7 +651,7 @@ PDF file (RulesBook.pdf)
 
 ```
 
----
+
 
 ## 💻 **LangChain Indexes – Code Example**
 
@@ -741,8 +745,9 @@ print(qa_chain.run("What is the resignation notice period?"))
 | Load files | Split into chunks | Store vectors | Find relevant chunks |
 
 ---
+![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
 
-## 🤖 **6. Agents – The Smartest, Action-Oriented Component**
+# 🤖 **6. Agents – The Smartest, Action-Oriented Component**
 
 ### 💡 **What Are Agents?**
 
@@ -891,12 +896,13 @@ Agents are the **glue** that orchestrates all the above when needed.
 - 🚀 Power behind **real-world, useful LLM apps**
 
 ---
+<center>⭐⭐⭐</center>
 
 ---
 
-![divider.png](divider.png)
+![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
 
-## ✅ Commonly Used Built-in Tools in LangChain
+# ✅ Commonly Used Built-in Tools in LangChain
 
 These are prebuilt and can be used directly or extended:
 
@@ -1047,8 +1053,5 @@ LangChain parses the prompt, detects tool requirements, and **automatically sele
 | **APIs** | `Wolfram`, `Notion`, `Zapier`, `OpenWeather`  |
 | **Human Input** | `HumanInputRun` |
 
-![divider.png](_img\_langCompIMG\divider.png)
+![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
 
-# LlamaIndex vs Langchain
-
-![image.png](_img\_langCompIMG\llamaidxVSlangChain.png)
