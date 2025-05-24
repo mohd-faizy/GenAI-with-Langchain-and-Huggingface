@@ -2,6 +2,10 @@
 
 ![author](https://img.shields.io/badge/author-mohd--faizy-red)
 
+
+- [LangChain Integrations](https://python.langchain.com/docs/integrations/providers/)
+- [LangChain Components](https://python.langchain.com/docs/integrations/components/)
+
 # Langchain components
 
 ![image.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/Lang_comp.png)
@@ -15,6 +19,35 @@
 - 🧠 The **Models component** is the **core interface** to interact with AI models (LLMs & Embedding Models).
 - 🔄 LangChain is **model-agnostic** – you can switch between different LLM providers with minimal code changes.
 - 🛠️ Solves the **standardization problem** – every provider (`OpenAI`, `Gemini`, `Anthropic`, etc.) has different APIs, but LangChain offers one unified interface.
+
+```python
+# Code using ChatOpenAI (GPT-4)
+from langchain_openai import ChatOpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
+
+model = ChatOpenAI(model='gpt-4', temperature=0)
+
+result = model.invoke("Now divide the result by 1.5")
+
+print(result.content)
+```
+
+```python
+# Code using ChatAnthropic (Claude 3 Opus)
+from langchain_anthropic import ChatAnthropic
+from dotenv import load_dotenv
+
+load_dotenv()
+
+model = ChatAnthropic(model='claude-3-opus-20240229')
+
+result = model.invoke("Hi who are you")
+
+print(result.content)
+
+```
 
 
 ### 📚 **Why Are Models Important?**
@@ -34,15 +67,15 @@
 ### 🤹‍♂️ **Types of Models in LangChain**
 
 1. 🗣️ **Language Models (LLMs)**
-    - Input: Text
-    - Output: Text
-    - Use cases: Chatbots, summarization, translation, coding.
+    - Input: `Text`
+    - Output: `Text`
+    - Use cases: `Chatbots`, `summarization`, `translation`, `coding`.
     - Providers: `OpenAI`, `Claude`, `Hugging Face`, `Bedrock`, `Mistral`, `Vertex AI`, `Azure`.
   
 2. 🧭 **Embedding Models**
     - Input: Text
     - Output: Vector (numerical representation)
-    - Use case: `Semantic Search` / `Vector DB`
+    - Use case: `Semantic Search`, `Vector DB`
     - Providers: `OpenAI`, `Mistral` AI, `IBM`, `Llama`, etc.
 
 
@@ -154,11 +187,9 @@ print(response.content)  # Should be a structured response like: {"France": "Par
 - ❗ The **quality of the output** depends directly on the **quality of the prompt**.
 - 🧠 Even small changes in the prompt can **hugely change** the LLM’s response.
 - 🧪 Example:
-  - "Explain Linear Regression in an academic tone"
-  - vs
-  - "Explain Linear Regression in a fun tone"
+  - "`Explain Linear Regression in an academic tone`" vs "`Explain Linear Regression in a fun tone`"
 
-        🔄 → Two completely different outputs!
+    🔄 → Two completely different outputs!
 
 ### 🎓 **Why Are Prompts Important?**
 
@@ -181,16 +212,82 @@ print(response.content)  # Should be a structured response like: {"France": "Par
 
 - 🔧 Use placeholders like `{topic}` or `{tone}` that get filled dynamically.
 - ✅ Example: `"Summarize this {topic} in a {tone} tone."`
+- 
+```python
+from langchain_core.prompts import PromptTemplate
+
+prompt = PromptTemplate.from_template('Summarize {topic} in {emotion} tone')
+print(prompt.format(topic='Cricket', emotion='fun'))
+
+```
 
 ### 2️⃣ Role-Based Prompts
 
 - 🧑‍⚕️ Use a system-level prompt like: `"You are an experienced doctor."`
 - 👤 Then ask: `"Explain symptoms of viral fever."`
 
+```python
+# Define the ChatPromptTemplate using from_template
+chat_prompt = ChatPromptTemplate.from_template([
+    ("system", "Hi, you are an experienced {profession}"),
+    ("user", "Tell me about {topic}"),
+])
+
+# Format the prompt with variables
+formatted_messages = chat_prompt.format_messages(profession="Doctor", topic="Viral Fever")
+```
+
 ### 3️⃣ Few-Shot Prompts
 
 - 🎓 Give **input-output examples** to teach the model before the real query.
 - 📊 Example: Show how messages map to categories before asking it to classify a new one.
+
+```python
+# Step 1: Give input examples
+examples = [
+    {"input": "I was charged twice for my subscription this month.", "output": "Billing Issue"},
+    {"input": "The app crashes every time I try to log in.", "output": "Technical Problem"},
+    {"input": "Can you explain how to upgrade my plan?", "output": "General Inquiry"},
+    {"input": "I need a refund for a payment I didn't authorize.", "output": "Billing Issue"}
+]
+
+# Step 2: Create an example template
+example_template = """
+Ticket: {input}
+Category: {output}
+"""
+
+# Step 3: Build the few-shot prompt template
+few_shot_prompt = FewShotPromptTemplate(
+    examples=examples,
+    example_prompt=PromptTemplate(input_variables=["input", "output"], template=example_template),
+    prefix="Classify the following customer support tickets into one of the categories: 'Billing Issue', 'Technical Problem', or 'General Inquiry'.\n\n",
+    suffix="\nTicket: {user_input}\nCategory:",
+    input_variables=["user_input"],
+)
+
+```
+
+```text
+Classify the following customer support tickets into one of the categories: 'Billing Issue', 'Technical Problem', or 'General Inquiry'.
+
+1. Ticket: I was charged twice for my subscription this month.
+   Category: Billing Issue
+
+2. Ticket: The app crashes every time I try to log in.
+   Category: Technical Problem
+
+3. Ticket: Can you explain how to upgrade my plan?
+   Category: General Inquiry
+
+4. Ticket: I need a refund for a payment I didn't authorize.
+   Category: Billing Issue
+
+5. Ticket: I am unable to connect to the internet using your service.
+   Category: 
+   Category:
+
+```
 
 
 ## 🧪 **Code Examples for LangChain Prompts**
@@ -324,20 +421,20 @@ print(prompt.format(role="data scientist", question="What is overfitting?"))
 
 ### 🔍 **Types of Chains in LangChain**
 
-### 1️⃣ **Sequential Chains**
+#### 1️⃣ **Sequential Chains**
 
 - Steps run **one after another** in order.
-- Example: Translate → Summarize → Format → Output
+- *Example*: Translate → Summarize → Format → Output
 
-### 2️⃣ **Parallel Chains**
+#### 2️⃣ **Parallel Chains**
 
 - 🧠 Run multiple LLMs **simultaneously** and combine results.
-- Example: Same input sent to 3 LLMs to generate different takes → Combine in final report.
+- *Example*: Same input sent to 3 LLMs to generate different takes → Combine in final report.
 
-### 3️⃣ **Conditional Chains**
+#### 3️⃣ **Conditional Chains**
 
 - 🤔 Branching logic: behavior changes based on input/response.
-- Example: If user feedback is negative → Send alert to support; else → Send thank-you note.
+- *Example*: If user feedback is negative → Send alert to support; else → Send thank-you note.
 
 
 ## 💻 **Code Examples for LangChain Chains**
@@ -455,7 +552,7 @@ print(chain.run("What did I just say?"))
 
 ### 📌 **What Is Memory in LangChain?**
 
-- 🔁 Most LLMs like GPT are **stateless** — they forget everything after each message.
+- 🔁⚠️ Most LLMs like GPT are **stateless** — they forget everything after each message.
 - ❌ If you ask:
   - "Who is Narendra Modi?"
   - Then: "How old is he?"
@@ -475,11 +572,10 @@ print(chain.run("What did I just say?"))
 
 | 🧠 Type | 📋 Description | 💡 Use Case |
 | --- | --- | --- |
-| **ConversationBufferMemory** | Stores **full chat history** | Best for short conversations |
-| **ConversationBufferWindowMemory** | Stores **last N messages** | Great for recent context without overloading |
-| **ConversationSummaryMemory** | Stores a **summary of conversation** | Ideal for long chats, saves cost |
-| **Custom Memory** | Store **special facts or variables** | Good for personalized assistants |
-
+| **`ConversationBufferMemory`** | Stores **full chat history** | Best for short conversations |
+| **`ConversationBufferWindowMemory`** | Stores **last N messages** | Great for recent context without overloading |
+| **`ConversationSummaryMemory`** | Stores a **summary of conversation** | Ideal for long chats, saves cost |
+| **`Custom Memory`** | Store **special facts or variables** | Good for personalized assistants |
 
 
 ## 💻 **Code Examples for LangChain Memory**
@@ -609,6 +705,8 @@ print(conversation.run("Another one please!"))  # Keeps previous context
 
 ### 📊 **How It Works (Simplified Flow)**
 
+![DOC_indexing](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_oth_img/LC_00_01.png)
+
 ```
 PDF file (RulesBook.pdf)
      ↓
@@ -616,11 +714,11 @@ PDF file (RulesBook.pdf)
      ↓
 [2] Text Splitter ➜ Split into small chunks
      ↓
-[3] Vector Store ➜ Embed chunks + Store
+[3] Vector Store (Vector Database) ➜ Embed chunks + Store
      ↓
-[4] Retriever ➜ Semantic search on user query
+[4] Retriever ➜ Genrates Embedding ➜ Semantic search on user query{Genrates Relevant}
      ↓
-     LLM (answers based on relevant chunks)
+     LLM answers based on (Relevant Chunks + User Query)
 
 ```
 
@@ -738,7 +836,7 @@ print(qa_chain.run("What is the resignation notice period?"))
 ### 🧠 **Two Key Superpowers of Agents**
 
 1. **🧩 Reasoning**: They break problems down into logical steps.
-    - Often via *Chain of Thought* prompting.
+    - Often via 👉⭐*Chain of Thought*⭐ prompting.
 2. **🔧 Tool Use**: They can use:
     - 🔢 Calculator
     - 🌦️ Weather API
