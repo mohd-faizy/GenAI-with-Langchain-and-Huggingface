@@ -149,6 +149,8 @@ print(response.content)  # Should be a structured response like: {"France": "Par
 ---
 ![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
 
+---
+
 # 🔹**2. Prompts – Crafting the Right Questions for LLMs**
 
 ### 📌 **What Are Prompts in LangChain?**
@@ -306,6 +308,8 @@ print(prompt.format(role="data scientist", question="What is overfitting?"))
 
 ---
 ![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
+
+---
 
 # 🔹 **3. Chains – Build Smart Pipelines for LLM Workflows**
 
@@ -470,6 +474,8 @@ print(chain.run("What did I just say?"))
 ---
 ![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
 
+---
+
 # 🧠 **4. Memory – Remembering Past Conversations in LangChain**
 
 ### 📌 **What Is Memory in LangChain?**
@@ -609,6 +615,8 @@ print(conversation.run("Another one please!"))  # Keeps previous context
 ---
 ![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
 
+---
+
 # 🗂️ **5. Indexes – Letting LLMs Use Your Private Data**
 
 ### 🤔 **Why Do We Need Indexes?**
@@ -746,6 +754,8 @@ print(qa_chain.run("What is the resignation notice period?"))
 
 ---
 ![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
+
+---
 
 # 🤖 **6. Agents – The Smartest, Action-Oriented Component**
 
@@ -896,11 +906,12 @@ Agents are the **glue** that orchestrates all the above when needed.
 - 🚀 Power behind **real-world, useful LLM apps**
 
 ---
-<center>⭐⭐⭐</center>
-
 ---
 
 ![divider.png](https://raw.githubusercontent.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/refs/heads/main/_img/_langCompIMG/divider.png)
+
+---
+---
 
 # ✅ Commonly Used Built-in Tools in LangChain
 
