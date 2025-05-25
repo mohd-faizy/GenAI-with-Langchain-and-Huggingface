@@ -3,5 +3,6 @@
         "activityBar.background": "#432804",
         "titleBar.activeBackground": "#5E3805",
         "titleBar.activeForeground": "#FEFAF5"
-    }
+    },
+    "taipyStudio.gUI.elementsFilePaths": []
 }

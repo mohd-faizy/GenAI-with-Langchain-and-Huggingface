@@ -1,6 +1,7 @@
-# LangChain Core
+# LangChain Core Components
 langchain
 langchain-core
+langchain-community
 
 # OpenAI Integration
 langchain-openai
@@ -8,8 +9,9 @@ openai
 
 # Anthropic Integration
 langchain-anthropic
+anthropic
 
-# Google Gemini (PaLM) Integration
+# Google Gemini Integration
 langchain-google-genai
 google-generativeai
 
@@ -17,6 +19,7 @@ google-generativeai
 langchain-huggingface
 transformers
 huggingface-hub
+torch
 
 # Environment Variable Management
 python-dotenv
@@ -24,3 +27,8 @@ python-dotenv
 # Machine Learning Utilities
 numpy
 scikit-learn
+
+# Additional Dependencies
+pydantic # Required by LangChain
+typing-extensions # Required by several packages
+requests # Required for API calls
