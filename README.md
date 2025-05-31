@@ -36,7 +36,6 @@
     - [3. Response Generation](#3-response-generation)
     - [4. System Integration](#4-system-integration)
     - [5. Performance Metrics](#5-performance-metrics)
-  - [Project Structure](#project-structure)
   - [Installation](#installation)
   - [Getting Started](#getting-started)
   - [Examples](#examples)
@@ -144,7 +143,7 @@ This repository demonstrates the power of combining Langchain's composability wi
     <img src="_img/User Perspective/2.5.png" alt="Performance Metrics" width="700"/>
 </div>
 
-## Project Structure
+<!-- ## Project Structure
 ```
 GenAI-with-Langchain-and-Huggingface/
 ├── examples/
@@ -161,7 +160,7 @@ GenAI-with-Langchain-and-Huggingface/
 │   └── config/
 ├── tests/
 └── docs/
-```
+``` -->
 
 ## Installation
 
