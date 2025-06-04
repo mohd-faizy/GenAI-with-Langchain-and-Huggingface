@@ -228,13 +228,7 @@ If you find this repository helpful, show your support by starring it! For quest
 
 ## 🪙Credits and Inspiration
 
-This repository is inspired by the excellent course content created by [Nitish Rajput](https://www.youtube.com/@campusx-official) on the CampusX YouTube channel. The implementation and examples in this repository are based on his comprehensive tutorials on Generative AI with Langchain and Huggingface.
-
-📺 **Original Course:**
-
-- **Channel**: [CampusX](https://www.youtube.com/@campusx-official)
-- **Instructor**: *Nitish Rajput*
-- **Course Link**: [Generative AI Course](https://www.youtube.com/watch?v=pSVk-5WemQ0&list=PLKnIA16_RmvaTbihpo4MtzVm4XOQa0ER0)
+This repository is inspired by the excellent course content created by [Nitish](https://www.youtube.com/@campusx-official) on the CampusX YouTube channel & DataCamps Course Developing LLMs with LangChain. The implementation and examples in this repository are based on his comprehensive tutorials on Generative AI with Langchain and Huggingface.
 
 ## 🔗Connect with me
 
