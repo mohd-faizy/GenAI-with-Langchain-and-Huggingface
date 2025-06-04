@@ -36,3 +36,5 @@ pydantic # Required by LangChain
 typing-extensions # Required by several packages
 requests # Required for API calls
 numexpr # For efficient numerical computations
+wikipedia  # For Wikipedia access
+duckduckgo-search # For DuckDuckGo search
