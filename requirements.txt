@@ -3,6 +3,9 @@ langchain
 langchain-core
 langchain-community
 
+# langgraph is a community-driven extension of LangChain
+langgraph
+
 # OpenAI Integration
 langchain-openai
 openai
@@ -32,3 +35,4 @@ scikit-learn
 pydantic # Required by LangChain
 typing-extensions # Required by several packages
 requests # Required for API calls
+numexpr # For efficient numerical computations
