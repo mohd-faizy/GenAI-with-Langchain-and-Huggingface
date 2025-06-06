@@ -38,3 +38,6 @@ requests # Required for API calls
 numexpr # For efficient numerical computations
 wikipedia  # For Wikipedia access
 duckduckgo-search # For DuckDuckGo search
+pypdf # For PDF handling
+unstructured # For unstructured data processing
+langchain-chroma # For ChromaDB integration
