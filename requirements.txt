@@ -43,3 +43,5 @@ unstructured # For unstructured data processing
 langchain-chroma # For ChromaDB integration
 markdown # For Markdown processing
 langchain-experimental # For experimental features
+rank_bm25 # For BM25 ranking
+ragas  # For RAG (Retrieval-Augmented Generation) capabilities
