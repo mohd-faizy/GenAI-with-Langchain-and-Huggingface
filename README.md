@@ -20,7 +20,7 @@
 - [GenAI with Langchain and Huggingface 🤗](#genai-with-langchain-and-huggingface-)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
-  - [Key Features](#key-features)
+  - [What is GenAI?](#what-is-genai)
   - [Types of Generative AI](#types-of-generative-ai)
     - [Supported Model Types](#supported-model-types)
 - [⭐Builder's Perspective](#builders-perspective)
@@ -48,12 +48,12 @@
 ## Overview
 This repository demonstrates the power of combining Langchain's composability with Huggingface's state-of-the-art models. We provide comprehensive examples and implementations for various Generative AI applications, from text generation to multimodal systems.
 
-## Key Features
-- 🔗 **Langchain Integration**: Seamless integration with Langchain's powerful components
-- 🤗 **Huggingface Models**: Access to cutting-edge pre-trained models
-- 📚 **Comprehensive Examples**: Detailed notebooks and use cases
-- 🛠️ **Production-Ready Code**: Optimized implementations for real-world applications
-- 📈 **Performance Metrics**: Detailed analysis and benchmarking tools
+## What is GenAI?
+Generative Al is a type of artificial intelligence that creates new content—such as `text`, `images`, `music`, or `code` — by learning patterns from existing data, mimicking human creativity.
+
+<div align="center">
+    <img src="_img/_genAI.jpeg" alt="GenAI_img"/>
+</div>
 
 ## Types of Generative AI
 
