@@ -1,12 +1,8 @@
 # GenAI with Langchain and Huggingface 🤗
 
-> This repository serves as a comprehensive guide for integrating Langchain with Huggingface models, enabling you to build, deploy, and optimize cutting-edge AI applications through hands-on projects and real-world examples.
-
 <div align="center">
-    <img src="_img/GenAI-OverView.png" alt="GenAI Overview" width="800"/>
-    <p><em>Overview of Generative AI Pipeline</em></p>
+    <img src="_img/GenAI_banner.png" alt="GenAI Overview"/>
 </div>
-
 
 ![author](https://img.shields.io/badge/author-mohd--faizy-red)
 ![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)
@@ -15,6 +11,16 @@
 ![LangChain](https://img.shields.io/badge/LangChain-00ADD8?logo=langchain&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD43B?logo=huggingface&logoColor=black)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+> This repository serves as a comprehensive guide for integrating Langchain with Huggingface models, enabling you to build, deploy, and optimize cutting-edge AI applications through hands-on projects and real-world examples.
+
+<div align="center">
+    <img src="_img/GenAI-OverView.png" alt="GenAI Overview" width="800"/>
+    <p><em>Overview of Generative AI Pipeline</em></p>
+</div>
+
+
+
 
 ## Table of Contents
 - [GenAI with Langchain and Huggingface 🤗](#genai-with-langchain-and-huggingface-)
@@ -49,7 +55,16 @@
 This repository demonstrates the power of combining Langchain's composability with Huggingface's state-of-the-art models. We provide comprehensive examples and implementations for various Generative AI applications, from text generation to multimodal systems.
 
 ## What is GenAI?
-Generative Al is a type of artificial intelligence that creates new content—such as `text`, `images`, `music`, or `code` — by learning patterns from existing data, mimicking human creativity.
+> **Generative AI** is a branch of artificial intelligence that focuses on creating entirely new content — such as `text`, `images`, `audio`, `code`, or video—by learning patterns, structures, and relationships from existing data. It mimics human creativity to generate outputs that are not only original but also remarkably similar to content produced by people, blurring the line between human-made and machine-generated work.
+
+> **Generative AI** is about learning the distribution of data so that it can generate a new sample from it. 
+
+- LLMs based apps like `ChatGPT`
+- `Diffusion` models for image
+- Code generating LLMs like `CodeLLama`
+- TTS models like `ElevenLabs`
+- Video gen model like `Sora` 
+
 
 <div align="center">
     <img src="_img/_genAI.jpeg" alt="GenAI_img"/>
