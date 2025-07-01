@@ -43,9 +43,7 @@
     - [4. System Integration](#4-system-integration)
     - [5. Performance Metrics](#5-performance-metrics)
   - [Installation](#installation)
-  - [Getting Started](#getting-started)
-  - [Examples](#examples)
-  - [Contributing](#contributing)
+  - [🛂Contributing](#contributing)
   - [⚖ ➤ License](#--license)
   - [❤️ Support](#️-support)
   - [🪙Credits and Inspiration](#credits-and-inspiration)
@@ -203,37 +201,8 @@ uv add -r requirements.txt
 
 ```
 
-## Getting Started
 
-```python
-from langchain import LLMChain
-from transformers import AutoModelForCausalLM, AutoTokenizer
-
-# Initialize model and tokenizer
-model_name = "gpt2"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(model_name)
-
-# Create a simple chain
-chain = LLMChain(
-    llm=model,
-    prompt_template="Write a story about {topic}"
-)
-
-# Run the chain
-result = chain.run(topic="space exploration")
-print(result)
-```
-
-## Examples
-Check our [examples directory](./examples) for complete implementations:
-- Text Generation Pipeline
-- Image Generation with Stable Diffusion
-- Question Answering Systems
-- Document Analysis
-- Chatbot Implementation
-
-## Contributing
+## 🛂Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
