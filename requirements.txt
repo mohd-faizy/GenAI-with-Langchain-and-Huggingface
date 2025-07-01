@@ -1,47 +1,72 @@
-# LangChain Core Components
-langchain
-langchain-core
-langchain-community
+# ============================================
+# 🌐 LangChain Core & Extensions
+# ============================================
+langchain                   # Core LangChain library
+langchain-core              # Underlying interfaces and utilities
+langchain-community         # Community-driven components
+langchain-experimental      # Experimental features
+langgraph                   # LangGraph: extension for agentic workflows
+langsmith                   # LangSmith: tracking/debugging tool for LangChain apps
 
-# langgraph is a community-driven extension of LangChain
-langgraph
+# ============================================
+# 🤖 LLM Providers & Integrations
+# ============================================
 
-# OpenAI Integration
-langchain-openai
-openai
+# --- OpenAI ---
+openai                      # Official OpenAI SDK
+langchain-openai            # LangChain's OpenAI integration
 
-# Anthropic Integration
-langchain-anthropic
-anthropic
+# --- Anthropic ---
+anthropic                   # Official Anthropic SDK
+langchain-anthropic         # LangChain's Anthropic integration
 
-# Google Gemini Integration
-langchain-google-genai
-google-generativeai
+# --- Google Gemini ---
+google-generativeai         # Gemini (PaLM) SDK from Google
+langchain-google-genai      # LangChain's Gemini integration
 
-# Hugging Face Integration
-langchain-huggingface
-transformers
-huggingface-hub
-torch
+# --- GROQ ---
+langchain-groq              # LangChain's GROQ integration
 
-# Environment Variable Management
-python-dotenv
+# --- Azure OpenAI ---
+# (If used, add Azure SDK packages such as azure-openai here)
 
-# Machine Learning Utilities
-numpy
-scikit-learn
+# --- Hugging Face ---
+transformers                # Hugging Face Transformers - model loading and inference
+huggingface-hub             # Interface to Hugging Face model/data hub
+torch                       # Required backend for Transformers (PyTorch)
+langchain-huggingface       # LangChain's Hugging Face integration
 
-# Additional Dependencies
-pydantic # Required by LangChain
-typing-extensions # Required by several packages
-requests # Required for API calls
-numexpr # For efficient numerical computations
-wikipedia  # For Wikipedia access
-duckduckgo-search # For DuckDuckGo search
-pypdf # For PDF handling
-unstructured # For unstructured data processing
-langchain-chroma # For ChromaDB integration
-markdown # For Markdown processing
-langchain-experimental # For experimental features
-rank_bm25 # For BM25 ranking
-ragas  # For RAG (Retrieval-Augmented Generation) capabilities
+# ============================================
+# 🧠 Machine Learning & Utilities
+# ============================================
+numpy                       # Numerical operations and array manipulation
+scikit-learn                # ML models, vectorizers, similarity metrics
+numexpr                     # Fast numerical expression evaluation engine
+
+# ============================================
+# ⚙️ Environment & Configuration
+# ============================================
+python-dotenv               # Environment variable management from `.env` files
+
+# ============================================
+# ⚙️ MCP (Multi-Component Pipeline) Dependencies
+# ============================================
+mcp                         # Core Multi-Component Pipeline library
+langchain-mcp-adapters      # MCP adapter to connect components with LangChain
+
+# ============================================
+# 📦 Miscellaneous Dependencies
+# ============================================
+pydantic                    # Data validation and parsing (used by LangChain and others)
+typing-extensions           # Advanced typing features for Python versions < 3.10
+requests                    # HTTP requests library
+wikipedia                   # Wikipedia API wrapper
+duckduckgo-search           # DuckDuckGo search integration
+langchain_tavily            # LangChain's integration for Tavily web search
+pypdf                       # PDF parsing and text extraction
+unstructured                # Processing unstructured document content
+markdown                    # Markdown format support
+rank_bm25                   # BM25 ranking algorithm for search/retrieval
+langchain-chroma            # Integration with Chroma vector database
+ragas                       # RAG (Retrieval-Augmented Generation) scoring/evaluation tools
+ipykernel                   # Jupyter kernel interface (for notebooks)

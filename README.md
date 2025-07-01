@@ -161,11 +161,11 @@ This repository demonstrates the power of combining Langchain's composability wi
 <!-- ## Project Structure
 ```
 GenAI-with-Langchain-and-Huggingface/
-├── examples/
-│   ├── text_generation/
-│   ├── image_generation/
-│   └── audio_processing/
-├── notebooks/
+├── 
+│   ├── 
+│   ├── 
+│   └── 
+├── 
 │   ├── 01_
 │   ├── 02_
 │   └── 03_
@@ -180,18 +180,26 @@ GenAI-with-Langchain-and-Huggingface/
 ## Installation
 
 ```bash
-# Clone the repository
+# Clone the repository from GitHub
 git clone https://github.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface.git
 
-# Navigate to the project directory
+# Navigate into the cloned project directory
 cd GenAI-with-Langchain-and-Huggingface
 
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+# Initialize a new uv project (creates pyproject.toml and sets up uv)
+uv init
 
-# Install required packages
-pip install -r requirements.txt
+# Create a virtual environment using uv (similar to python -m venv .venv)
+uv venv
+
+# Activate the virtual environment
+# For macOS/Linux:
+.venv/bin/activate  
+# For Windows (use this instead):
+# venv\Scripts\activate
+
+# Install all required packages listed in requirements.txt
+uv add -r requirements.txt
 
 ```
 
