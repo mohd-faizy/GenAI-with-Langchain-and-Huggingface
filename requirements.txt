@@ -1,5 +1,5 @@
 # ============================================
-# 🌐 LangChain Core & Extensions
+# 🧩 LangChain Core & Extensions
 # ============================================
 langchain                   # Core LangChain library
 langchain-core              # Underlying interfaces and utilities
@@ -7,6 +7,7 @@ langchain-community         # Community-driven components
 langchain-experimental      # Experimental features
 langgraph                   # LangGraph: extension for agentic workflows
 langsmith                   # LangSmith: tracking/debugging tool for LangChain apps
+langchain-mcp-adapters      # MCP adapter to connect components with LangChain
 
 # ============================================
 # 🤖 LLM Providers & Integrations
@@ -27,14 +28,19 @@ langchain-google-genai      # LangChain's Gemini integration
 # --- GROQ ---
 langchain-groq              # LangChain's GROQ integration
 
-# --- Azure OpenAI ---
-# (If used, add Azure SDK packages such as azure-openai here)
-
 # --- Hugging Face ---
 transformers                # Hugging Face Transformers - model loading and inference
 huggingface-hub             # Interface to Hugging Face model/data hub
-torch                       # Required backend for Transformers (PyTorch)
+torch                       # Backend for Transformers (PyTorch)
 langchain-huggingface       # LangChain's Hugging Face integration
+
+# Optional: Recommended for embeddings and local inference
+sentence-transformers       # Pretrained embedding models
+accelerate                  # Optimized model loading for HF models
+bitsandbytes                # For efficient inference (optional for 8bit models)
+
+# --- Ollama (Local LLMs) ---
+langchain-ollama            # LangChain's Ollama integration for local models
 
 # ============================================
 # 🧠 Machine Learning & Utilities
@@ -42,31 +48,34 @@ langchain-huggingface       # LangChain's Hugging Face integration
 numpy                       # Numerical operations and array manipulation
 scikit-learn                # ML models, vectorizers, similarity metrics
 numexpr                     # Fast numerical expression evaluation engine
+faiss-cpu                   # Fast vector search (alternative to Chroma)
 
 # ============================================
 # ⚙️ Environment & Configuration
 # ============================================
-python-dotenv               # Environment variable management from `.env` files
+python-dotenv               # Load environment variables from `.env` files
 
 # ============================================
-# ⚙️ MCP (Multi-Component Pipeline) Dependencies
+# 🔍 Search & Retrieval Tools
 # ============================================
-mcp                         # Core Multi-Component Pipeline library
-langchain-mcp-adapters      # MCP adapter to connect components with LangChain
-
-# ============================================
-# 📦 Miscellaneous Dependencies
-# ============================================
-pydantic                    # Data validation and parsing (used by LangChain and others)
-typing-extensions           # Advanced typing features for Python versions < 3.10
-requests                    # HTTP requests library
 wikipedia                   # Wikipedia API wrapper
 duckduckgo-search           # DuckDuckGo search integration
 langchain_tavily            # LangChain's integration for Tavily web search
+
+# ============================================
+# 📄 Document Parsing / RAG Tools
+# ============================================
 pypdf                       # PDF parsing and text extraction
 unstructured                # Processing unstructured document content
 markdown                    # Markdown format support
 rank_bm25                   # BM25 ranking algorithm for search/retrieval
 langchain-chroma            # Integration with Chroma vector database
-ragas                       # RAG (Retrieval-Augmented Generation) scoring/evaluation tools
+ragas                       # RAG scoring and evaluation tools
+
+# ============================================
+# 📊 Notebook & Visualization Support
+# ============================================
 ipykernel                   # Jupyter kernel interface (for notebooks)
+ipywidgets                  # Jupyter UI widgets
+tqdm                        # Progress bar support
+notebook                    # Jupyter Notebook interface
