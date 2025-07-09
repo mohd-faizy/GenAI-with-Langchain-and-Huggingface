@@ -79,3 +79,9 @@ ipykernel                   # Jupyter kernel interface (for notebooks)
 ipywidgets                  # Jupyter UI widgets
 tqdm                        # Progress bar support
 notebook                    # Jupyter Notebook interface
+
+
+# ============================================
+# 🖥️ App Interface / UI Frameworks
+# ============================================
+streamlit                   # UI framework for building interactive web apps

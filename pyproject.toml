@@ -44,6 +44,7 @@ dependencies = [
     "requests>=2.32.4",
     "scikit-learn>=1.7.0",
     "sentence-transformers>=5.0.0",
+    "streamlit>=1.46.1",
     "torch>=2.7.1",
     "tqdm>=4.67.1",
     "transformers>=4.53.0",
