@@ -26,7 +26,7 @@ model = ChatGroq(
 st.title("AI Research Paper Summarizer")
 st.subheader("Generate tailored summaries of foundational AI research papers")
 
-# ---------- User Input Controls ----------
+
 # ---------- User Input Controls ----------
 paper_input = st.selectbox(
     "Select Research Paper",

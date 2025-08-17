@@ -1,0 +1,18 @@
+[
+    {
+        "type": "human",
+        "content": "Hi, I ordered a laptop last week."
+    },
+    {
+        "type": "ai",
+        "content": "Hello! Could you please provide me with your order ID so I can check the status?"
+    },
+    {
+        "type": "human",
+        "content": "Sure, my order ID is 12345."
+    },
+    {
+        "type": "ai",
+        "content": "Thank you. I see that your order was cancelled, and the refund is currently being processed."
+    }
+]
