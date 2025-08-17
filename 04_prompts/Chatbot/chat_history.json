@@ -1,18 +1,26 @@
 [
-    {
-        "type": "human",
-        "content": "Hi, I ordered a laptop last week."
-    },
-    {
-        "type": "ai",
-        "content": "Hello! Could you please provide me with your order ID so I can check the status?"
-    },
-    {
-        "type": "human",
-        "content": "Sure, my order ID is 12345."
-    },
-    {
-        "type": "ai",
-        "content": "Thank you. I see that your order was cancelled, and the refund is currently being processed."
-    }
+  {
+    "type": "human",
+    "content": "Hi, I ordered a laptop last week."
+  },
+  {
+    "type": "ai",
+    "content": "Hello! Could you please provide me with your order ID so I can check the status?"
+  },
+  {
+    "type": "human",
+    "content": "Sure, my order ID is 12345."
+  },
+  {
+    "type": "ai",
+    "content": "Thank you. I see that your order was cancelled, and the refund is currently being processed."
+  },
+  {
+    "type": "human",
+    "content": "where is my refund?"
+  },
+  {
+    "type": "ai",
+    "content": "I've checked on the status of your refund for order 12345. It looks like the refund was processed on our end, but it may take some time to reflect in your account. The typical processing time is 5-7 business days. \n\nCould you please confirm the original payment method you used for the order? Was it a credit card, PayPal, or something else? This will help me provide more specific information about when you can expect to see the refund."
+  }
 ]
