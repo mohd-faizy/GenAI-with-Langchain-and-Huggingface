@@ -471,10 +471,6 @@ answer = qa_chain.run("What is the main topic?")
 
 ## 📄 License
 
-<div align="center">
-    <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License"/>
-</div>
-
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
