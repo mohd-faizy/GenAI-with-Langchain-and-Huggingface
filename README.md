@@ -12,8 +12,6 @@
 [**📚 Projects**](#-projects) |
 [**⚡ Installation**](#-installation)
 
-<div align="center">
-
 ![Author](https://img.shields.io/badge/Author-mohd--faizy-red?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-Framework-00ADD8?style=for-the-badge&logo=langchain&logoColor=white)
@@ -29,15 +27,11 @@
 
 
 
-<div>
+<div align="center">
     <h3>🌟 Build Production-Ready Generative AI Applications</h3>
 </div>
 
-<div>
-
 This repository demonstrates the implementation of **Generative AI systems** using LangChain for workflow orchestration and HuggingFace for state-of-the-art models. Unlike traditional AI approaches, this framework enables **scalable**, **modular**, and **production-ready** AI applications capable of **complex text generation**, **multimodal processing**, and **seamless model integration**.
-
-</div>
 
 <div align="center">
     <img src="_img/GenAI-OverView.png" alt="GenAI Overview" width="800"/>
@@ -46,7 +40,7 @@ This repository demonstrates the implementation of **Generative AI systems** usi
 
 ---
 
-<h2>📋 Table of Contents</h2>
+## 📋 Table of Contents
 
 - [🤖 GenAI with Langchain and Huggingface](#-genai-with-langchain-and-huggingface)
   - [📋 Table of Contents](#-table-of-contents)
@@ -81,7 +75,7 @@ This repository demonstrates the implementation of **Generative AI systems** usi
 
 ---
 
-<h2>🚀 Quick Start</h2>
+## 🚀 Quick Start
 
 Get up and running in less than 5 minutes:
 
@@ -104,19 +98,16 @@ python examples/basic_text_generation.py
 
 ---
 
-<h2>🎯 What is GenAI?</h2>
+## 🎯 What is GenAI?
 
-<div>
 
 > **🧠 Generative AI** is a revolutionary branch of artificial intelligence that creates entirely new content — `text`, `images`, `audio`, `code`, and `video` — by learning intricate patterns and relationships from vast datasets. It doesn't just analyze; it **creates**, **innovates**, and **imagines**.
 
-</div>
-
-<h3>🌟 Core Principles</h3>
+### 🌟 Core Principles
 
 **Generative AI** learns the **distribution of data** to generate new, original samples that maintain the essence of the training data while being completely novel.
 
-<div>
+<div align="center">
 
 | 🎨 **Domain** | 🔧 **Technology** | 🌟 **Examples** |
 |:---:|:---:|:---:|
@@ -130,14 +121,14 @@ python examples/basic_text_generation.py
 
 ---
 
-<h2>🔧 Types of Generative AI</h2>
+## 🔧 Types of Generative AI
 
-<div>
+<div align="center">
     <img src="_img/GenAI-Types.png" alt="Types of Generative AI" width="800"/>
     <p><em>🎨 Comprehensive Overview of Generative AI Model Categories</em></p>
 </div>
 
-<h3>🎨 Supported Model Types</h3>
+### 🎨 Supported Model Types
 
 <details>
 <summary><strong>📝 Text Generation Models</strong></summary>
@@ -171,16 +162,16 @@ python examples/basic_text_generation.py
 
 ---
 
-<h2>👨‍💻 Builder's Perspective</h2>
+## 👨‍💻 Builder's Perspective
 
-<div>
+<div align="center">
     <h3>🏗️ Deep Dive into GenAI Architecture</h3>
     <p><em>Understanding the technical foundations that power modern AI systems</em></p>
 </div>
 
-<h3>1. 🏗️ Foundation Model Architecture</h3>
+### 1. 🏗️ Foundation Model Architecture
 
-<div>
+<div align="center">
     <img src="_img/Builder Perspective/1.1.png" alt="Foundation Model" width="700"/>
     <p><em>🧱 Core architectural components of foundation models</em></p>
 </div>
@@ -191,9 +182,9 @@ python examples/basic_text_generation.py
 - **📊 Embedding Layers**: Dense vector representations of tokens
 - **🎯 Output Heads**: Task-specific prediction layers
 
-<h3>2. 🔄 Model Training Pipeline</h3>
+### 2. 🔄 Model Training Pipeline
 
-<div>
+<div align="center">
     <img src="_img/Builder Perspective/1.2.png" alt="Training Pipeline" width="700"/>
     <p><em>⚙️ End-to-end model training workflow</em></p>
 </div>
@@ -204,9 +195,9 @@ python examples/basic_text_generation.py
 - **🔧 RLHF**: Reinforcement Learning from Human Feedback
 - **✅ Evaluation**: Comprehensive model assessment
 
-<h3>3. 📊 Data Processing</h3>
+### 3. 📊 Data Processing
 
-<div>
+<div align="center">
     <img src="_img/Builder Perspective/1.3.png" alt="Data Processing" width="700"/>
     <p><em>🔄 Data preprocessing and augmentation pipeline</em></p>
 </div>
@@ -217,9 +208,9 @@ python examples/basic_text_generation.py
 - **⚖️ Balancing**: Ensuring representative samples
 - **🔒 Privacy**: Implementing data protection measures
 
-<h3>4. 🧠 Model Architecture</h3>
+### 4. 🧠 Model Architecture
 
-<div>
+<div align="center">
     <img src="_img/Builder Perspective/1.4.png" alt="Model Architecture" width="700"/>
     <p><em>🏛️ Detailed neural network architecture design</em></p>
 </div>
@@ -230,9 +221,9 @@ python examples/basic_text_generation.py
 - **📏 Normalization**: Layer norm and batch norm strategies
 - **🎛️ Hyperparameters**: Learning rates, batch sizes, regularization
 
-<h3>5. 🖥️ Training Infrastructure</h3>
+### 5. 🖥️ Training Infrastructure
 
-<div>
+<div align="center">
     <img src="_img/Builder Perspective/1.5.png" alt="Training Infrastructure" width="700"/>
     <p><em>☁️ Scalable cloud infrastructure for model training</em></p>
 </div>
@@ -243,9 +234,9 @@ python examples/basic_text_generation.py
 - **🌐 Networking**: High-bandwidth interconnects
 - **📊 Monitoring**: Real-time training metrics
 
-<h3>6. 🚀 Deployment Strategy</h3>
+### 6. 🚀 Deployment Strategy
 
-<div>
+<div align="center">
     <img src="_img/Builder Perspective/1.6.png" alt="Deployment Strategy" width="700"/>
     <p><em>🌍 Production deployment and scaling strategies</em></p>
 </div>
@@ -258,16 +249,16 @@ python examples/basic_text_generation.py
 
 ---
 
-<h2>👤 User's Perspective</h2>
+## 👤 User's Perspective
 
-<div>
+<div align="center">
     <h3>🎨 Crafting Exceptional User Experiences</h3>
     <p><em>Designing intuitive interfaces for complex AI systems</em></p>
 </div>
 
-<h3>1. 🎨 Interface Design</h3>
+### 1. 🎨 Interface Design
 
-<div>
+<div align="center">
     <img src="_img/User Perspective/2.1.png" alt="Interface Design" width="700"/>
     <p><em>🖼️ Modern, intuitive user interface design principles</em></p>
 </div>
@@ -278,9 +269,9 @@ python examples/basic_text_generation.py
 - **♿ Accessible**: WCAG compliant for all users
 - **🎨 Beautiful**: Modern aesthetics with purposeful design
 
-<h3>2. 🤝 User Interaction</h3>
+### 2. 🤝 User Interaction
 
-<div>
+<div align="center">
     <img src="_img/User Perspective/2.2.png" alt="User Interaction" width="700"/>
     <p><em>💬 Natural and engaging user interaction patterns</em></p>
 </div>
@@ -291,9 +282,9 @@ python examples/basic_text_generation.py
 - **📁 File Upload**: Multi-format document processing
 - **🔄 Real-time Updates**: Live generation feedback
 
-<h3>3. ⚡ Response Generation</h3>
+### 3. ⚡ Response Generation
 
-<div>
+<div align="center">
     <img src="_img/User Perspective/2.3.png" alt="Response Generation" width="700"/>
     <p><em>🚀 Lightning-fast response generation pipeline</em></p>
 </div>
@@ -304,9 +295,9 @@ python examples/basic_text_generation.py
 - **🔧 Customization**: User-defined parameters
 - **✅ Quality Control**: Output validation and filtering
 
-<h3>4. 🔗 System Integration</h3>
+### 4. 🔗 System Integration
 
-<div>
+<div align="center">
     <img src="_img/User Perspective/2.4.png" alt="System Integration" width="700"/>
     <p><em>🌐 Seamless integration with existing systems</em></p>
 </div>
@@ -317,9 +308,9 @@ python examples/basic_text_generation.py
 - **📊 Database**: Persistent data storage
 - **🔐 Authentication**: Secure user management
 
-<h3>5. 📈 Performance Metrics</h3>
+### 5. 📈 Performance Metrics
 
-<div>
+<div align="center">
     <img src="_img/User Perspective/2.5.png" alt="Performance Metrics" width="700"/>
     <p><em>📊 Comprehensive performance monitoring and analytics</em></p>
 </div>
@@ -332,9 +323,9 @@ python examples/basic_text_generation.py
 
 ---
 
-<h2>⚡ Installation</h2>
+## ⚡ Installation
 
-<h3>🐍 Using UV (Recommended)</h3>
+### 🐍 Using UV (Recommended)
 
 ```bash
 # 📥 Clone the repository
@@ -357,7 +348,7 @@ source .venv/bin/activate
 uv add -r requirements.txt
 ```
 
-<h3>🔧 Alternative Installation</h3>
+### 🔧 Alternative Installation
 
 <details>
 <summary><strong>🐍 Using pip</strong></summary>
@@ -402,7 +393,7 @@ pip install -r requirements.txt
 
 ---
 
-<h2>🛠️ Usage Examples</h2>
+## 🛠️ Usage Examples
 
 <details>
 <summary><strong>💬 Basic Text Generation</strong></summary>
@@ -455,9 +446,9 @@ answer = qa_chain.run("What is the main topic?")
 
 ---
 
-<h2>🤝 Contributing</h2>
+## 🤝 Contributing
 
-<h3>🚀 Quick Contribution Guide</h3>
+### 🚀 Quick Contribution Guide
 
 1. **🍴 Fork** the repository
 2. **🌿 Create** your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -465,7 +456,7 @@ answer = qa_chain.run("What is the main topic?")
 4. **📤 Push** to the branch (`git push origin feature/AmazingFeature`)
 5. **🔄 Open** a Pull Request
    
-<div>
+<div align="center">
 
 | 🎯 **Type** | 📝 **Description** | 🔗 **How to Help** |
 |:---:|:---:|:---:|
@@ -478,23 +469,52 @@ answer = qa_chain.run("What is the main topic?")
 
 ---
 
-<h2>📄 License</h2>
+## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
+---
+
+## 💖 Support
+
+<div align="center">
+    <h3>🌟 Show Your Support</h3>
+    <p>If this repo helped you, please consider:</p>
+
+| 🎯 **Action** | 📝 **Description** |
+|:---:|:---:|
+| ⭐ **Star this repo** | Show appreciation |
+| 🤝 **Contribute** | Make it better |
+
+</div>
+
+<div align="center">
+    <a href="https://github.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/stargazers">
+        <img src="https://img.shields.io/github/stars/mohd-faizy/GenAI-with-Langchain-and-Huggingface?style=social" alt="GitHub stars"/>
+    </a>
+    <a href="https://twitter.com/F4izy">
+        <img src="https://img.shields.io/twitter/follow/F4izy?style=social" alt="Twitter Follow"/>
+    </a>
+</div>
 
 
-<h2>🪙 Credits and Inspiration</h2>
+
+---
+
+## 🪙Credits and Inspiration
 
 This repository draws inspiration from the exceptional educational content developed by Nitish, Krish Naik, and the DataCamp course `Developing LLMs with LangChain`. The implementations and examples provided here are grounded in their comprehensive tutorials on Generative AI, with a particular focus on LangChain and Hugging Face.
 
-<h2>Connect with me</h2>
+## 🔗Connect with me
 
-<div>
+➤ If you have questions or feedback, feel free to reach out!!!
 
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/F4izy)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohd-faizy/)
-[![Stack Exchange](https://img.shields.io/badge/Stack_Exchange-1E5397?style=for-the-badge&logo=stack-exchange&logoColor=white)](https://ai.stackexchange.com/users/36737/faizy)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mohd-faizy)
+[<img align="left" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" width="32px"/>][twitter]
+[<img align="left" src="https://cdn-icons-png.flaticon.com/512/145/145807.png" width="32px"/>][linkedin]
+[<img align="left" src="https://cdn-icons-png.flaticon.com/512/2626/2626299.png" width="32px"/>][Portfolio]
 
-</div>
+[twitter]: https://twitter.com/F4izy
+[linkedin]: https://www.linkedin.com/in/mohd-faizy/
+[Portfolio]: https://ai.stackexchange.com/users/36737/faizy?tab=profile
+
+
