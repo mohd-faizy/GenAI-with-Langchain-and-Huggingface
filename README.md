@@ -473,31 +473,6 @@ answer = qa_chain.run("What is the main topic?")
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
----
-
-## 💖 Support
-
-<div align="center">
-    <h3>🌟 Show Your Support</h3>
-    <p>If this repo helped you, please consider:</p>
-
-| 🎯 **Action** | 📝 **Description** |
-|:---:|:---:|
-| ⭐ **Star this repo** | Show appreciation |
-| 🤝 **Contribute** | Make it better |
-
-</div>
-
-<div align="center">
-    <a href="https://github.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface/stargazers">
-        <img src="https://img.shields.io/github/stars/mohd-faizy/GenAI-with-Langchain-and-Huggingface?style=social" alt="GitHub stars"/>
-    </a>
-    <a href="https://twitter.com/F4izy">
-        <img src="https://img.shields.io/twitter/follow/F4izy?style=social" alt="Twitter Follow"/>
-    </a>
-</div>
-
-
 
 ---
 
@@ -506,15 +481,12 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 This repository draws inspiration from the exceptional educational content developed by Nitish, Krish Naik, and the DataCamp course `Developing LLMs with LangChain`. The implementations and examples provided here are grounded in their comprehensive tutorials on Generative AI, with a particular focus on LangChain and Hugging Face.
 
 ## 🔗Connect with me
+<div align="center">
 
-➤ If you have questions or feedback, feel free to reach out!!!
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/F4izy)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohd-faizy/)
+[![Stack Exchange](https://img.shields.io/badge/Stack_Exchange-1E5397?style=for-the-badge&logo=stack-exchange&logoColor=white)](https://ai.stackexchange.com/users/36737/faizy)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mohd-faizy)
 
-[<img align="left" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" width="32px"/>][twitter]
-[<img align="left" src="https://cdn-icons-png.flaticon.com/512/145/145807.png" width="32px"/>][linkedin]
-[<img align="left" src="https://cdn-icons-png.flaticon.com/512/2626/2626299.png" width="32px"/>][Portfolio]
-
-[twitter]: https://twitter.com/F4izy
-[linkedin]: https://www.linkedin.com/in/mohd-faizy/
-[Portfolio]: https://ai.stackexchange.com/users/36737/faizy?tab=profile
-
+</div>
 
