@@ -4,13 +4,12 @@
 
 <div align="center">
 
-[**🚀 Quick Start**](#-quick-start) |
-[**🎯 What is GenAI?**](#-what-is-genai) |
-[**🔧 Types of GenAI**](#-types-of-generative-ai) |
-[**👨‍💻 Builder's Perspective**](#-builders-perspective) |
-[**👤 User's Perspective**](#-users-perspective) |
+[**🎯 What is GenAI?**](#1--what-is-genai) |
+[**🔧 Types of GenAI**](#2--types-of-generative-ai) |
+[**👨‍💻 Builder's Perspective**](#3--builders-perspective) |
+[**👤 User's Perspective**](#4--users-perspective) |
 [**📚 Projects**](#-projects) |
-[**⚡ Installation**](#-installation)
+[**⚡ Installation**](#5--installation)
 
 ![Author](https://img.shields.io/badge/Author-mohd--faizy-red?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -27,11 +26,7 @@
 
 
 
-<div align="center">
-    <h3>🌟 Build Production-Ready Generative AI Applications</h3>
-</div>
-
-This repository demonstrates the implementation of **Generative AI systems** using LangChain for workflow orchestration and HuggingFace for state-of-the-art models. Unlike traditional AI approaches, this framework enables **scalable**, **modular**, and **production-ready** AI applications capable of **complex text generation**, **multimodal processing**, and **seamless model integration**.
+>This repository provides a practical framework for building Generative AI systems using LangChain for orchestration and HuggingFace for model integration. It focuses on modular, production-grade architectures for complex text generation and multimodal processing. The codebase is actively maintained, with new notebooks and workflow examples added regularly to cover emerging patterns and tools.
 
 <div align="center">
     <img src="_img/GenAI-OverView.png" alt="GenAI Overview" width="800"/>
@@ -42,65 +37,46 @@ This repository demonstrates the implementation of **Generative AI systems** usi
 
 ## 📋 Table of Contents
 
-- [1. 🚀 Quick Start](#1--quick-start)
-- [2. 🎯 What is GenAI?](#2--what-is-genai)
-  - [2.1. 🌟 Core Principles](#21--core-principles)
-- [3. 🔧 Types of Generative AI](#3--types-of-generative-ai)
-  - [3.1. 🎨 Supported Model Types](#31--supported-model-types)
-- [4. 👨‍💻 Builder's Perspective](#4--builders-perspective)
-  - [4.1. 🏗️ Foundation Model Architecture](#41--foundation-model-architecture)
-  - [4.2. 🔄 Model Training Pipeline](#42--model-training-pipeline)
-  - [4.3. 📊 Data Processing](#43--data-processing)
-  - [4.4. 🧠 Model Architecture](#44--model-architecture)
-  - [4.5. 🖥️ Training Infrastructure](#45--training-infrastructure)
-  - [4.6. 🚀 Deployment Strategy](#46--deployment-strategy)
-- [5. 👤 User's Perspective](#5--users-perspective)
-  - [5.1. 🎨 Interface Design](#51--interface-design)
-  - [5.2. 🤝 User Interaction](#52--user-interaction)
-  - [5.3. ⚡ Response Generation](#53--response-generation)
-  - [5.4. 🔗 System Integration](#54--system-integration)
-  - [5.5. 📈 Performance Metrics](#55--performance-metrics)
-- [6. ⚡ Installation](#6--installation)
-  - [6.1. 🐍 Using UV (Recommended)](#61--using-uv-recommended)
-  - [6.2. 🔧 Alternative Installation](#62--alternative-installation)
-- [7. 🛠️ Usage Examples](#7--usage-examples)
-- [8. 🤝 Contributing](#8--contributing)
-  - [8.1. 🚀 Quick Contribution Guide](#81--quick-contribution-guide)
-- [9. 📄 License](#9--license)
-- [10. 🪙 Credits and Inspiration](#10--credits-and-inspiration)
-- [11. 🔗 Connect with me](#11--connect-with-me)
+- [1. What is GenAI?](#1--what-is-genai)
+  - [1.1. Core Principles](#11--core-principles)
+- [2. Types of Generative AI](#2--types-of-generative-ai)
+  - [2.1. Supported Model Types](#21--supported-model-types)
+- [3. Builder's Perspective](#3--builders-perspective)
+  - [3.1. Foundation Model Architecture](#31--foundation-model-architecture)
+  - [3.2. Model Training Pipeline](#32--model-training-pipeline)
+  - [3.3. Data Processing](#33--data-processing)
+  - [3.4. Model Architecture](#34--model-architecture)
+  - [3.5. Training Infrastructure](#35--training-infrastructure)
+  - [3.6. Deployment Strategy](#36--deployment-strategy)
+  - [3.7. RAG & Orchestration](#37--rag--orchestration)
+  - [3.8. Prompts & Evaluation](#38--prompts--evaluation)
+- [4. User's Perspective](#4--users-perspective)
+  - [4.1. Interface Design](#41--interface-design)
+  - [4.2. User Interaction](#42--user-interaction)
+  - [4.3. Response Generation](#43--response-generation)
+  - [4.4. System Integration](#44--system-integration)
+  - [4.5. Performance Metrics](#45--performance-metrics)
+  - [4.6. Safety & Ethics](#46--safety--ethics)
+- [5. Installation](#5--installation)
+  - [5.1. Using UV (Recommended)](#51--using-uv-recommended)
+  - [5.2. Alternative Installation](#52--alternative-installation)
+- [6. Usage Examples](#6--usage-examples)
+- [7. Contributing](#7--contributing)
+  - [7.1. Quick Contribution Guide](#71--quick-contribution-guide)
+- [8. License](#8--license)
+- [9. Credits and Inspiration](#9--credits-and-inspiration)
+- [10. Connect with me](#10--connect-with-me)
 
 ---
 
-## 1. 🚀 Quick Start
 
-Get up and running in less than 5 minutes:
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/mohd-faizy/GenAI-with-Langchain-and-Huggingface.git
-cd GenAI-with-Langchain-and-Huggingface
-
-# 2. Set up environment
-uv venv && source .venv/bin/activate  # Linux/Mac
-# OR
-uv venv && .venv\Scripts\activate     # Windows
-
-# 3. Install dependencies
-uv add -r requirements.txt
-
-# 4. Run your first GenAI app
-python examples/basic_text_generation.py
-```
-
----
-
-## 2. 🎯 What is GenAI?
+## 1. 🎯 What is GenAI?
 
 
 > **🧠 Generative AI** is a revolutionary branch of artificial intelligence that creates entirely new content — `text`, `images`, `audio`, `code`, and `video` — by learning intricate patterns and relationships from vast datasets. It doesn't just analyze; it **creates**, **innovates**, and **imagines**.
 
-### 2.1. 🌟 Core Principles
+### 1.1. 🌟 Core Principles
 
 **Generative AI** learns the **distribution of data** to generate new, original samples that maintain the essence of the training data while being completely novel.
 
@@ -118,14 +94,14 @@ python examples/basic_text_generation.py
 
 ---
 
-## 3. 🔧 Types of Generative AI
+## 2. 🔧 Types of Generative AI
 
 <div align="center">
     <img src="_img/GenAI-Types.png" alt="Types of Generative AI" width="800"/>
     <p><em>🎨 Comprehensive Overview of Generative AI Model Categories</em></p>
 </div>
 
-### 3.1. 🎨 Supported Model Types
+### 2.1. 🎨 Supported Model Types
 
 <details>
 <summary><strong>📝 Text Generation Models</strong></summary>
@@ -159,170 +135,194 @@ python examples/basic_text_generation.py
 
 ---
 
-## 4. 👨‍💻 Builder's Perspective
+## 3. 👨‍💻 Builder's Perspective
 
 <div align="center">
     <h3>🏗️ Deep Dive into GenAI Architecture</h3>
     <p><em>Understanding the technical foundations that power modern AI systems</em></p>
 </div>
 
-### 4.1. 🏗️ Foundation Model Architecture
+### 3.1. 🏗️ Foundation Model Architecture
 
 <div align="center">
     <img src="_img/Builder Perspective/1.1.png" alt="Foundation Model" width="700"/>
-    <p><em>🧱 Core architectural components of foundation models</em></p>
+    <p><em>Core architectural components of foundation models</em></p>
 </div>
 
 **Key Components:**
-- **🔤 Tokenization Layer**: Converting raw text to numerical representations
-- **🧠 Transformer Blocks**: Self-attention mechanisms for context understanding
-- **📊 Embedding Layers**: Dense vector representations of tokens
-- **🎯 Output Heads**: Task-specific prediction layers
+- **Tokenization Layer**: Converting raw text to numerical representations (BPE, WordPiece).
+- **Transformer Blocks**: Self-attention mechanisms (Multi-Head Attention) for context understanding.
+- **Embedding Layers**: High-dimensional vector representations of tokens.
+- **Output Heads**: Task-specific prediction layers (Causal LM, Sequence Classification).
 
-### 4.2. 🔄 Model Training Pipeline
+### 3.2. 🔄 Model Training Pipeline
 
 <div align="center">
     <img src="_img/Builder Perspective/1.2.png" alt="Training Pipeline" width="700"/>
-    <p><em>⚙️ End-to-end model training workflow</em></p>
+    <p><em>End-to-end model training workflow</em></p>
 </div>
 
 **Training Stages:**
-- **📚 Pre-training**: Learning from massive text corpora
-- **🎯 Fine-tuning**: Task-specific adaptation
-- **🔧 RLHF**: Reinforcement Learning from Human Feedback
-- **✅ Evaluation**: Comprehensive model assessment
+- **Pre-training**: Self-supervised learning from massive text corpora (The Pile, CommonCrawl).
+- **Fine-tuning**: Supervised Fine-Tuning (SFT) for instruction following.
+- **RLHF/DPO**: Aligning models with human preferences using Reinforcement Learning.
+- **Evaluation**: Benchmarking on standard datasets (MMLU, GSM8K, HumanEval).
 
-### 4.3. 📊 Data Processing
+### 3.3. 📊 Data Processing
 
 <div align="center">
     <img src="_img/Builder Perspective/1.3.png" alt="Data Processing" width="700"/>
-    <p><em>🔄 Data preprocessing and augmentation pipeline</em></p>
+    <p><em>Data preprocessing and augmentation pipeline</em></p>
 </div>
 
 **Processing Steps:**
-- **🧹 Data Cleaning**: Removing noise and inconsistencies
-- **🔀 Augmentation**: Expanding dataset diversity
-- **⚖️ Balancing**: Ensuring representative samples
-- **🔒 Privacy**: Implementing data protection measures
+- **Data Cleaning**: Deduplication, PII redaction, and heuristic filtering.
+- **Augmentation**: Synthetic data generation and back-translation.
+- **Balancing**: Sampling strategies to ensure dataset diversity.
+- **Privacy**: Federated learning and differential privacy techniques.
 
-### 4.4. 🧠 Model Architecture
+### 3.4. 🧠 Model Architecture
 
 <div align="center">
     <img src="_img/Builder Perspective/1.4.png" alt="Model Architecture" width="700"/>
-    <p><em>🏛️ Detailed neural network architecture design</em></p>
+    <p><em>Detailed neural network architecture design</em></p>
 </div>
 
 **Architecture Elements:**
-- **🔗 Layer Connections**: Skip connections and residual blocks
-- **⚡ Activation Functions**: ReLU, GELU, Swish optimizations
-- **📏 Normalization**: Layer norm and batch norm strategies
-- **🎛️ Hyperparameters**: Learning rates, batch sizes, regularization
+- **Layer Connections**: Residual connections (ResNet style) and Layer Normalization (Pre-Norm).
+- **Activation Functions**: Modern variants like Swish and GeGLU.
+- **Positional Embeddings**: RoPE (Rotary Positional Embeddings) or ALiBi for context extension.
+- **Optimization**: Flash Attention for efficient computation.
 
-### 4.5. 🖥️ Training Infrastructure
+### 3.5. 🖥️ Training Infrastructure
 
 <div align="center">
     <img src="_img/Builder Perspective/1.5.png" alt="Training Infrastructure" width="700"/>
-    <p><em>☁️ Scalable cloud infrastructure for model training</em></p>
+    <p><em>Scalable cloud infrastructure for model training</em></p>
 </div>
 
 **Infrastructure Components:**
-- **💻 Compute Resources**: GPUs, TPUs, distributed training
-- **💾 Storage Systems**: High-performance data storage
-- **🌐 Networking**: High-bandwidth interconnects
-- **📊 Monitoring**: Real-time training metrics
+- **Compute**: H100/A100 Clusters with interconnects (NVLink/InfiniBand).
+- **Storage**: High-throughput distributed storage (Lustre, S3).
+- **Orchestration**: Kubernetes, Ray, or Slurm for job scheduling.
+- **Monitoring**: Weights & Biases or MLflow for experiment tracking.
 
-### 4.6. 🚀 Deployment Strategy
+### 3.6. 🚀 Deployment Strategy
 
 <div align="center">
     <img src="_img/Builder Perspective/1.6.png" alt="Deployment Strategy" width="700"/>
-    <p><em>🌍 Production deployment and scaling strategies</em></p>
+    <p><em>Production deployment and scaling strategies</em></p>
 </div>
 
 **Deployment Options:**
-- **☁️ Cloud Deployment**: AWS, GCP, Azure integration
-- **🏠 On-Premise**: Local server deployment
-- **📱 Edge Computing**: Mobile and IoT deployment
-- **🔄 Auto-scaling**: Dynamic resource allocation
+- **Model Serving**: vLLM, TGI, or TensorRT-LLM for high-throughput inference.
+- **Quantization**: FP8, INT8, or AWQ for reduced memory footprint.
+- **Edge AI**: ONNX Runtime or TFLite for mobile deployment.
+- **Auto-scaling**: KEDA or Horizontal Pod Autoscaling based on request metrics.
+
+### 3.7. 📚 RAG & Orchestration
+
+**Retrieval-Augmented Generation (RAG)** enhances model accuracy by grounding responses in external data.
+
+- **Vector Databases**: Pinecone, Milvus, Qdrant for semantic search.
+- **Chunking Strategies**: Recursive character split vs. semantic chunking.
+- **Retrieval Algorithms**: Hybrid search (BM25 + Dense) and Reranking (Cohere, BGE).
+- **Orchestration**: LangGraph or LangChain for stateful multi-step workflows.
+
+### 3.8. ⚙️ Prompts & Evaluation
+
+- **Prompt Engineering**: Chain-of-Thought (CoT), ReAct, and System Role definition.
+- **Evaluation Frameworks**: RAGAS (Faithfulness, Answer Relevance) and TruLens.
+- **LLMOps**: Prompt versioning, trace logging (LangSmith), and dataset management.
 
 ---
 
-## 5. 👤 User's Perspective
+## 4. 👤 User's Perspective
 
 <div align="center">
     <h3>🎨 Crafting Exceptional User Experiences</h3>
     <p><em>Designing intuitive interfaces for complex AI systems</em></p>
 </div>
 
-### 5.1. 🎨 Interface Design
+### 4.1. 🎨 Interface Design
 
 <div align="center">
     <img src="_img/User Perspective/2.1.png" alt="Interface Design" width="700"/>
-    <p><em>🖼️ Modern, intuitive user interface design principles</em></p>
+    <p><em>Modern, intuitive user interface design principles</em></p>
 </div>
 
 **Design Principles:**
-- **🎯 User-Centric**: Intuitive navigation and clear workflows
-- **📱 Responsive**: Works seamlessly across all devices
-- **♿ Accessible**: WCAG compliant for all users
-- **🎨 Beautiful**: Modern aesthetics with purposeful design
+- **User-Centric**: Clear affordances for AI capabilities vs limitations.
+- **Responsive**: Adaptive layouts for mobile, tablet, and desktop.
+- **Accessible**: Semantic HTML and ARIA labels for screen readers.
+- **Aesthetics**: Clean typography and purposeful whitespace (e.g., Shadcn/UI).
 
-### 5.2. 🤝 User Interaction
+### 4.2. 🤝 User Interaction
 
 <div align="center">
     <img src="_img/User Perspective/2.2.png" alt="User Interaction" width="700"/>
-    <p><em>💬 Natural and engaging user interaction patterns</em></p>
+    <p><em>Natural and engaging user interaction patterns</em></p>
 </div>
 
 **Interaction Features:**
-- **💬 Chat Interface**: Natural language conversations
-- **🎛️ Parameter Controls**: Fine-tune model behavior
-- **📁 File Upload**: Multi-format document processing
-- **🔄 Real-time Updates**: Live generation feedback
+- **Chat Interface**: Threaded conversations with branching support.
+- **Parameter Controls**: Temperature, Top-P, and System Prompt modifiers.
+- **Multimodal Input**: Drag-and-drop for images, PDFs, and audio files.
+- **Feedback Loops**: Thumbs up/down and text corrections for model improvement.
 
-### 5.3. ⚡ Response Generation
+### 4.3. ⚡ Response Generation
 
 <div align="center">
     <img src="_img/User Perspective/2.3.png" alt="Response Generation" width="700"/>
-    <p><em>🚀 Lightning-fast response generation pipeline</em></p>
+    <p><em>Lightning-fast response generation pipeline</em></p>
 </div>
 
 **Generation Process:**
-- **⚡ Streaming**: Real-time token generation
-- **🎯 Context Awareness**: Maintaining conversation history
-- **🔧 Customization**: User-defined parameters
-- **✅ Quality Control**: Output validation and filtering
+- **Streaming**: Server-Sent Events (SSE) for perceived latency reduction.
+- **Context Awareness**: Sliding window or summarization for long conversations.
+- **Customization**: User personas and memory injection.
+- **Citations**: Linking generated assertions back to source documents.
 
-### 5.4. 🔗 System Integration
+### 4.4. 🔗 System Integration
 
 <div align="center">
     <img src="_img/User Perspective/2.4.png" alt="System Integration" width="700"/>
-    <p><em>🌐 Seamless integration with existing systems</em></p>
+    <p><em>Seamless integration with existing systems</em></p>
 </div>
 
 **Integration Capabilities:**
-- **🔌 API Endpoints**: RESTful and GraphQL APIs
-- **🔗 Webhooks**: Event-driven integrations
-- **📊 Database**: Persistent data storage
-- **🔐 Authentication**: Secure user management
+- **API First**: REST/GraphQL endpoints for headless consumption.
+- **Webhooks**: Event-driven architecture for async processing.
+- **Identity**: OAuth2/OIDC for secure role-based access control (RBAC).
+- **Data Persistence**: Postgres (pgvector) or Redis for session storage.
 
-### 5.5. 📈 Performance Metrics
+### 4.5. 📈 Performance Metrics
 
 <div align="center">
     <img src="_img/User Perspective/2.5.png" alt="Performance Metrics" width="700"/>
-    <p><em>📊 Comprehensive performance monitoring and analytics</em></p>
+    <p><em>Comprehensive performance monitoring and analytics</em></p>
 </div>
 
 **Key Metrics:**
-- **⚡ Response Time**: Sub-second generation speeds
-- **🎯 Accuracy**: High-quality output consistency
-- **👥 User Satisfaction**: Feedback and rating systems
-- **📈 Usage Analytics**: Detailed usage insights
+- **TTFT (Time To First Token)**: Optimizing for sub-200ms starts.
+- **Tokens/Sec**: Throughput monitoring for cost estimation.
+- **Quality**: User acceptance rate and bounce reduction.
+- **Error Rates**: Hallucination frequency and fallback triggers.
+
+### 4.6. 🛡️ Safety & Ethics
+
+**Safety Layers** ensure the AI operates within defined boundaries.
+
+- **Guardrails**: Input/Output filtering for PII and toxicity (NeMo Guardrails).
+- **Transparency**: Clear labeling of AI-generated content.
+- **Bias Mitigation**: System prompts designed to reduce stereotype reinforcement.
+- **Rate Limiting**: Preventing abuse and managing cost quotas.
 
 ---
 
-## 6. ⚡ Installation
+## 5. ⚡ Installation
 
-### 6.1. 🐍 Using UV (Recommended)
+### 5.1. 🐍 Using UV (Recommended)
 
 ```bash
 # 📥 Clone the repository
@@ -345,7 +345,7 @@ source .venv/bin/activate
 uv add -r requirements.txt
 ```
 
-### 6.2. 🔧 Alternative Installation
+### 5.2. 🔧 Alternative Installation
 
 <details>
 <summary><strong>🐍 Using pip</strong></summary>
@@ -390,7 +390,7 @@ pip install -r requirements.txt
 
 ---
 
-## 7. 🛠️ Usage Examples
+## 6. 🛠️ Usage Examples
 
 <details>
 <summary><strong>💬 Basic Text Generation</strong></summary>
@@ -443,9 +443,9 @@ answer = qa_chain.run("What is the main topic?")
 
 ---
 
-## 8. 🤝 Contributing
+## 7. 🤝 Contributing
 
-### 8.1. 🚀 Quick Contribution Guide
+### 7.1. 🚀 Quick Contribution Guide
 
 1. **🍴 Fork** the repository
 2. **🌿 Create** your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -466,18 +466,18 @@ answer = qa_chain.run("What is the main topic?")
 
 ---
 
-## 9. 📄 License
+## 8. 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 
 ---
 
-## 10. 🪙 Credits and Inspiration
+## 9. 🪙 Credits and Inspiration
 
 This repository draws inspiration from the exceptional educational content developed by Nitish, Krish Naik, and the DataCamp course `Developing LLMs with LangChain`. The implementations and examples provided here are grounded in their comprehensive tutorials on Generative AI, with a particular focus on LangChain and Hugging Face.
 
-## 11. 🔗 Connect with me
+## 10. 🔗 Connect with me
 <div align="center">
 
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/F4izy)
